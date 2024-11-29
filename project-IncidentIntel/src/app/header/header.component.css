@@ -1,0 +1,66 @@
+/* header.component.css */
+
+/* Basic styling for the header */
+.header {
+    display: flex; /* Enable flexbox */
+    justify-content: space-between; /* Distribute space between left and right content */
+    align-items: center;  /* Vertically center the content */
+    padding: 10px 20px;
+    background-color: #2680be;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: #fcfcfc;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .dropdown-content {
+    display: none;  /* Initially hidden */
+    position: absolute;
+    right: 20px;  /* Align to the right side */
+    top: 60px;  /* Position it below the hamburger icon */
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-content li {
+    padding: 8px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  .active {
+    display: block;
+  }
