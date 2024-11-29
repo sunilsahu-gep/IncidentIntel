@@ -1,0 +1,100 @@
+.body {
+    margin: 0;
+    padding: 0;
+    height: 10em; /* Full height */
+    background-image: url('/assets/images/background/circutImage.jpg'); /* Path to your image */
+    background-size: auto; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+}
+
+.content {
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Some padding */
+}
+
+.teamText {
+    font-size: 1.7em; /* Large font size */
+    font-weight: normal; /* Normal weight */
+    margin-top: 15px; /* Space above the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #ffffff; /* White color */
+    text-transform: capitalize; /* Capitalize each word */
+    letter-spacing: 1px; /* Spacing between letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.header {
+    font-size: 3em; /* Large font size */
+    font-weight: normal; /* Normal weight */
+    margin-top: 15px; /* Space above the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #ffffff; /* White color */
+    text-transform: capitalize; /* Capitalize each word */
+    letter-spacing: 1px; /* Spacing between letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.product{
+    font-size: 1.5em; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #00ccff; /* Bright cyan color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.about-image img {
+    width: 100%;                        
+    height: auto;                       
+}
+
+.about {
+    display: grid;                      /* Enable grid layout */
+    grid-template-columns: 59% 39%;      /* Define two columns, 60% for text, 40% for image */
+    align-items: center;                /* Vertically center the items */
+    gap: 20px;                          /* Add space between the text and image */
+}
+
+.about-text {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+
+  .about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .about-text li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
