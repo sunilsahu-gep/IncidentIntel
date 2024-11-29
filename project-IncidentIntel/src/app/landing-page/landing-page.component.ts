@@ -10,7 +10,7 @@ export class LandingPageComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-  }
+  } 
 
   navigateSignInPage(){
     this.router.navigate(['/login'])
