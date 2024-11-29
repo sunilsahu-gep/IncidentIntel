@@ -6,7 +6,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { FunctionalityComponent } from './functionality/functionality.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { RouterModule, Routes } from '@angular/router';
 
+
+const appRoutes: Routes = [
+  { path: 'landing', component: LandingPageComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: '/landing', pathMatch: 'full' }, // Default route
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +23,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
