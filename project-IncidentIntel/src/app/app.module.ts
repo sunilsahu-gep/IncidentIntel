@@ -8,6 +8,7 @@ import { FunctionalityComponent } from './functionality/functionality.component'
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { RouterModule, Routes } from '@angular/router';
 
+import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingPageComponent },
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     AppComponent,
     LoginComponent,
     FunctionalityComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
