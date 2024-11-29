@@ -1,366 +1,100 @@
-/* Landing Page Hero Section */
-.landing-hero {
-  background-image: url('/assets/images/background/bhuma.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* Full viewport height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  position: relative;
+.body {
+    margin: 0;
+    padding: 0;
+    height: 10em; /* Full height */
+    background-image: url('/assets/images/background/circutImage.jpg'); /* Path to your image */
+    background-size: auto; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
 }
 
-.hero-content {
-  z-index: 1;
-}
-
-.header {
-  margin-top: 110px;
-  font-size: 4rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+.content {
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Some padding */
 }
 
 .teamText {
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
+    font-size: 1.7em; /* Large font size */
+    font-weight: normal; /* Normal weight */
+    margin-top: 15px; /* Space above the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #ffffff; /* White color */
+    text-transform: capitalize; /* Capitalize each word */
+    letter-spacing: 1px; /* Spacing between letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-.cta-button {
-  background-color: #4e5d6b; /* Premium dark blue-gray */
-  color: #fff; /* White text for contrast */
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif; /* Elegant font */
-  border: 2px solid #4e5d6b; /* Border to match the background color */
-  border-radius: 50px; /* Rounded edges for a sleek look */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition */
-  text-transform: uppercase; /* Uppercase letters for impact */
-  letter-spacing: 1px; /* Add some spacing between the letters */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+.header {
+    font-size: 3em; /* Large font size */
+    font-weight: normal; /* Normal weight */
+    margin-top: 15px; /* Space above the heading */
+    margin-bottom: 15px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #ffffff; /* White color */
+    text-transform: capitalize; /* Capitalize each word */
+    letter-spacing: 1px; /* Spacing between letters */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-.cta-button:hover {
-  background-color: #fff; /* White background on hover */
-  color: #4e5d6b; /* Dark blue-gray text */
-  border: 2px solid #4e5d6b; /* Keep the border color consistent */
-  transform: translateY(-3px); /* Slightly elevate the button */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+.product{
+    font-size: 1.5em; /* Large font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center the text */
+    color: #00ccff; /* Bright cyan color */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Spacing between letters */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
 }
 
-.cta-button:focus {
-  outline: none; /* Remove focus outline */
-  box-shadow: 0 0 0 4px rgba(75, 126, 159, 0.6); /* Soft glow for focus state */
-}
-
-/* About Section */
-.product {
-  text-align: center;
-  padding: 40px;
-}
-
-.product h1 {
-  font-size: 2.5rem;
-  color: #007bff;
+.about-image img {
+    width: 100%;                        
+    height: auto;                       
 }
 
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px;
-  margin-top:10px;
+    display: grid;                      /* Enable grid layout */
+    grid-template-columns: 59% 39%;      /* Define two columns, 60% for text, 40% for image */
+    align-items: center;                /* Vertically center the items */
+    gap: 20px;                          /* Add space between the text and image */
 }
 
 .about-text {
-  /* background-color: #f9f9f9; */
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
-}
-
-.about-text ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.about-text li {
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header {
-    font-size: 3rem;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
   }
 
-  .teamText {
-    font-size: 1.5rem;
+  .about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
   }
 
-  .cta-button {
+  .about-text li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
-
-  .about {
-    flex-direction: column;
-    align-items: center;
+  
+  button:hover {
+    background-color: #0056b3;
   }
-
-  .about-text {
-    width: 80%;
-  }
-}
-
-
-.header-bar {
-  background-color: #000000; /* Black background */
-  color: #ffffff; /* White text for contrast */
-  display: flex;
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Vertically center the content */
-  padding: 15px 30px; /* Add some padding to the header */
-  position: fixed; /* Keep the header fixed at the top */
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; /* Ensure it's above other content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.header-bar .logo {
-  font-size: 1.8rem; /* Slightly larger font for the logo */
-  font-weight: bold; /* Bold for the logo */
-  text-transform: uppercase; /* Uppercase letters for impact */
-  letter-spacing: 2px; /* Spacing between letters for a classy touch */
-  font-family: 'Poppins', sans-serif; /* Elegant font for logo */
-}
-
-.header-bar nav {
-  display: flex;
-  gap: 20px; /* Space between nav items */
-}
-
-.header-bar nav a {
-  color: #ffffff; /* White text */
-  font-size: 1.1rem; /* Slightly smaller than logo */
-  text-transform: uppercase; /* Uppercase for navigation items */
-  font-weight: normal;
-  text-decoration: none; /* Remove underline */
-  letter-spacing: 1px; /* Spacing between letters */
-  transition: all 0.3s ease; /* Smooth transition */
-}
-
-.header-bar nav a:hover {
-  color: #ffcc00; /* Gold color for hover */
-  text-decoration: underline; /* Underline on hover for emphasis */
-}
-
-.header-bar .cta-button {
-  background-color: #ffcc00; /* Gold button */
-  color: #000; /* Black text for contrast */
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 30px; /* Rounded edges */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition */
-}
-
-.header-bar .cta-button:hover {
-  background-color: #ffd700; /* Slightly brighter gold on hover */
-  transform: translateY(-3px); /* Elevate the button on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Darker shadow for hover */
-}
-
-/* About Section with Premium Background */
-/* About Section */
-.about {
-  display: flex; /* Use flexbox for a side-by-side layout */
-  justify-content: flex-start; /* Align the content to the left */
-  gap: 40px; /* Add space between product and about sections */
-  padding: 60px;
-  margin-top: 10px;
-  background-color: #f4f4f9; /* Light background for the section */
-  border-radius: 15px; /* Rounded corners for the section */
-}
-
-.product {
-  flex: 2; /* Give more space to the product section */
-  padding: 40px;
-  background-color: #ffffff; /* White background for product content */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-}
-
-.about-section {
-  flex: 1; /* Take up less space compared to the product section */
-  padding: 40px;
-  background-color: #ffffff; /* White background for the about content */
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-}
-
-.about-section h2 {
-  font-size: 2.5rem;
-  color: #1e2a47; /* Dark blue-gray for the header */
-  margin-bottom: 20px;
-  font-family: 'Lora', serif; /* Elegant serif font for class */
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-.about-section p {
-  font-size: 1.1rem;
-  color: #555555; /* Softer dark gray text */
-  line-height: 1.7;
-  font-family: 'Poppins', sans-serif;
-}
-
-.about-section p::before {
-  content: '“'; /* Add quote marks around the paragraph for elegance */
-  font-size: 3rem;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-}
-
-.about-section p::after {
-  content: '”'; /* Add closing quote mark */
-  font-size: 3rem;
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-}
-
-/* Decorative border */
-.about-section::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
-    align-items: center;
-  }
-
-  .product, .about-section {
-    width: 80%;
-    margin-bottom: 30px;
-  }
-
-  .about-section h2 {
-    font-size: 2rem; /* Slightly smaller text on smaller screens */
-  }
-
-  .about-section p {
-    font-size: 1.1rem; /* Adjust paragraph size */
-  }
-}
-
-/* GitHub Co-pilot Section */
-.github-section {
-  background-image: url('/assets/images/background/chotu.jpg');
-  color: #333; /* Dark text color for readability */
-  padding: 60px 0; /* Spacing for the section */
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  text-align: center;
-  margin-top: 10px;
-}
-
-.github-content {
-   /* White background for the content */
-  padding: 40px;
-  border-radius: 10px; /* Rounded corners for a premium look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  max-width: 800px; /* Limit the width of the content */
-  width: 90%; /* Responsive width */
-  margin-top: 50px;
-  font-size: 4rem;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-}
-
-.github-content h2 {
-  font-size: 2rem; /* Large font size */
-  font-weight: 500; /* Medium weight */
-  color: #FFFFFF; /* Dark color for text */
-  letter-spacing: 1px; /* Slight letter spacing for class */
-  text-transform: uppercase; /* Uppercase for a modern touch */
-  margin: 0; /* Remove margin */
-}
-
-.github-content h2::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  margin: 20px auto 0; /* Center the line */
-}
-
-@media (max-width: 768px) {
-  .github-content h2 {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
-  }
-}
-
-/* Try Doc Button */
-.try-doc-button {
-  background-color: #4e5d6b; /* Premium dark blue-gray */
-  color: #fff; /* White text for contrast */
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  font-family: 'Poppins', sans-serif; /* Elegant font */
-  border: 2px solid #4e5d6b; /* Border to match the background color */
-  border-radius: 30px; /* Rounded edges for a sleek look */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition */
-  text-transform: uppercase; /* Uppercase letters for impact */
-  letter-spacing: 1px; /* Add some spacing between the letters */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  display: block; /* Block display for centering */
-  margin: 20px auto; /* Center the button */
-}
-
-.try-doc-button:hover {
-  background-color: #fff; /* White background on hover */
-  color: #4e5d6b; /* Dark blue-gray text */
-  border: 2px solid #4e5d6b; /* Keep the border color consistent */
-  transform: translateY(-3px); /* Slightly elevate the button */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
-}
-
-.try-doc-button:focus {
-  outline: none; /* Remove focus outline */
-  box-shadow: #217bcf; /* Soft glow for focus state */
-}
-
-@media (max-width: 768px) {
-  .try-doc-button {
-    padding: 10px 25px; /* Adjust padding for smaller screens */
-    font-size: 1rem; /* Adjust font size for smaller screens */
-  }
-}
