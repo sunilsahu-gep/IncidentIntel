@@ -12,7 +12,7 @@ import { HeaderComponent } from './header/header.component';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingPageComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'copilot', component: LoginComponent },
   { path: 'functionality', component: FunctionalityComponent },
   { path: '', redirectTo: '/landing', pathMatch: 'full' }, // Default route
 ];

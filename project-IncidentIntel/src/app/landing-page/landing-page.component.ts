@@ -13,7 +13,11 @@ export class LandingPageComponent implements OnInit {
   } 
 
   navigateSignInPage(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/copilot'])
+  }
+
+  openDocumentation() {
+    window.open('https://gep1-my.sharepoint.com/:w:/g/personal/shikhar_raj_gep_com/EfFxoPcGAm9Nk4LdwKBz9YEBRl_7IwawdvTrKsrEJhUZLQ?e=9Xj8KL', '_blank');
   }
 
 }
